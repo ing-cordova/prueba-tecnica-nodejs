@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="loadJS('excercise-one.js')">Exercise One</button>
+    <button onclick="loadJS('excercise-two.js')">Exercise Two</button>
+    <button onclick="loadJS('excercise-three.js')">Exercise Three</button>
+  </body>
+  <script>
+    function loadJS(filename) {
+      const script = document.createElement("script");
+      script.src = filename;
+      document.body.appendChild(script);
+    }
+  </script>
+</html>
